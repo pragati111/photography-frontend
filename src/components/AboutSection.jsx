@@ -11,6 +11,7 @@ export default function AboutSection() {
   return (
     <div className="mx-10">
       <section className="bg-transparent py-20 overflow-hidden">
+        <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet" />
         <div className="relative max-w-[1700px] mx-auto min-h-[1050px] px-10">
 
         {/* ====================== HEADING ====================== */}
@@ -18,15 +19,15 @@ export default function AboutSection() {
         <div
           className="absolute z-30"
           style={{
-            left: "380px",
-            top: "220px",
+            left: "330px",
+            top: "202px",
             width: "780px",
           }}
         >
           <h1
             style={{
-              fontFamily: "Cormorant Garamond",
-              fontSize: "56px",
+              fontFamily: "Baskerville Old Face, Baskerville, 'Times New Roman', serif",
+              fontSize: "59px",
               fontWeight: 300,
               lineHeight: "1",
               letterSpacing: "-1px",
@@ -37,10 +38,14 @@ export default function AboutSection() {
             <br />
             <span
               style={{
-                fontStyle: "italic",
-                fontSize: "36px",
-                fontWeight: 300,
+                fontFamily: "Ephesis, cursive",
+                fontStyle: "bold",
+                fontSize: "46px",
+                fontWeight: 590,
                 marginRight: "8px",
+                display: "inline-block",
+                verticalAlign: "top",
+                lineHeight: 1,
               }}
             >
               to an
