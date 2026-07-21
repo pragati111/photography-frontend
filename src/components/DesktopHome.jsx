@@ -1,6 +1,7 @@
 import TopNavbar from "./TopNavbar";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
+import IconicImagesSection from "./IconicImagesSection";
 
 export default function DesktopHome() {
   return (
@@ -9,6 +10,7 @@ export default function DesktopHome() {
         <TopNavbar />
       </HeroSection>
       <AboutSection />
+      <IconicImagesSection />
     </div>
   );
 }

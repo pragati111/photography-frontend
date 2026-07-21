@@ -10,9 +10,9 @@ import travel from "../assets/logos/9.png";
 export default function AboutSection() {
   return (
     <div className="mx-10">
-      <section className="bg-transparent py-20 overflow-hidden">
+      <section className="bg-transparent py-10 overflow-hidden">
         <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet" />
-        <div className="relative max-w-[1700px] mx-auto min-h-[1050px] px-10">
+        <div className="relative max-w-[1700px] mx-auto min-h-[860px] px-10">
 
         {/* ====================== HEADING ====================== */}
 
