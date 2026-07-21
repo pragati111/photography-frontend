@@ -3,6 +3,7 @@ import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
 import IconicImagesSection from "./IconicImagesSection";
 import PhotographyBlogSection from "./PhotographyBlogSection";
+import AwardSection from "./AwardSection";
 import VideoSection from "./VideoSection";
 
 export default function DesktopHome() {
@@ -15,6 +16,7 @@ export default function DesktopHome() {
       <IconicImagesSection />
       <PhotographyBlogSection/>
       <VideoSection/>
+      <AwardSection />
     </div>
   );
 }
