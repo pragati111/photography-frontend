@@ -14,7 +14,9 @@ export default function DesktopHome() {
         <TopNavbar />
       </HeroSection>
       <AboutSection />
-      <IconicImagesSection />
+      <div className="mt-12 lg:mt-16">
+        <IconicImagesSection />
+      </div>
       <PhotographyBlogSection />
       <VideoSection />
       <AwardSection />
