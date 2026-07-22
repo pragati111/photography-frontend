@@ -15,10 +15,12 @@ export default function DesktopHome() {
       </HeroSection>
       <AboutSection />
       <IconicImagesSection />
-      <PhotographyBlogSection/>
-      <VideoSection/>
+      <PhotographyBlogSection />
+      <VideoSection />
       <AwardSection />
-      <PremiumCarousel />
+      <div className="mt-16 lg:mt-24">
+        <PremiumCarousel />
+      </div>
     </div>
   );
 }
