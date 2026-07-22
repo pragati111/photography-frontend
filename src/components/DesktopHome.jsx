@@ -5,6 +5,7 @@ import IconicImagesSection from "./IconicImagesSection";
 import PhotographyBlogSection from "./PhotographyBlogSection";
 import AwardSection from "./AwardSection";
 import VideoSection from "./VideoSection";
+import WeddingFilmsSection from "./WeddingFilmsFolder/WeddingFilmsSection";
 
 export default function DesktopHome() {
   return (
@@ -17,6 +18,7 @@ export default function DesktopHome() {
       <PhotographyBlogSection/>
       <VideoSection/>
       <AwardSection />
+      <WeddingFilmsSection />
     </div>
   );
 }

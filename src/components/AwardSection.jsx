@@ -2,14 +2,12 @@ import award1 from "../assets/awards/1.png";
 import award2 from "../assets/awards/2.png";
 import award3 from "../assets/awards/3.png";
 import award4 from "../assets/awards/4.png";
-import award5 from "../assets/awards/5.png";
 
 const awards = [
   award1,
   award2,
   award3,
   award4,
-  award5,
 ];
 
 export default function AwardSection() {
