@@ -6,6 +6,7 @@ import PhotographyBlogSection from "./PhotographyBlogSection";
 import AwardSection from "./AwardSection";
 import VideoSection from "./VideoSection";
 import WeddingFilmsSection from "./WeddingFilmsFolder/WeddingFilmsSection";
+import PremiumCarousel from "./PremiumCarousel";
 
 export default function DesktopHome() {
   return (
@@ -19,6 +20,7 @@ export default function DesktopHome() {
       <VideoSection/>
       <AwardSection />
       <WeddingFilmsSection />
+      <PremiumCarousel />
     </div>
   );
 }
