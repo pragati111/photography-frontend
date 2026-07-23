@@ -83,7 +83,7 @@ export default function PremiumCarousel() {
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={120}
-          slidesPerView={1}
+          slidesPerView={1.2}
           loop={true}
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
