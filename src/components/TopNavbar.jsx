@@ -17,7 +17,7 @@ export default function TopNavbar() {
 
           <a href="#">Films</a>
 
-          <a href="#">Contact Us</a>
+          <a href="#">About Us</a>
 
           <a href="#">Editorial</a>
 

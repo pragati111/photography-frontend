@@ -24,6 +24,14 @@ const AboutUs = lazy(() => import("./components/AboutUs"));
 const ContactUs = lazy(() => import("./components/ContactUs"));
 const NewlyLaunched = lazy(() => import("./components/NewlyLaunched"));
 
+const EditorialsPage = lazy(() => import("./pages/Editorials"));
+const PhotographyBlogsPage = lazy(() => import("./pages/PhotographyBlogs"));
+const FilmsPage = lazy(() => import("./pages/Films"));
+const FAQPageNew = lazy(() => import("./pages/FAQPage"));
+const GetInTouchPage = lazy(() => import("./pages/GetInTouchPage"));
+const AboutUsPage = lazy(() => import("./pages/AboutUsPage"));
+const CareersPage = lazy(() => import("./pages/CareersPage"));
+const TestimonialsPage = lazy(() => import("./pages/TestimonialsPage"));
 
 function App() {
   return (
@@ -45,8 +53,16 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/wholesale-orders" element={<WholesaleOrders />} />
           <Route path="/faqs" element={<FAQPage />} />
+          <Route path="/faq-page" element={<FAQPageNew />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/get-in-touch" element={<GetInTouchPage />} />
+          <Route path="/editorials" element={<EditorialsPage />} />
+          <Route path="/photography-blogs" element={<PhotographyBlogsPage />} />
+          <Route path="/films" element={<FilmsPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/newly-launched" element={<NewlyLaunched />} />
         </Routes>
   </Suspense>
@@ -68,8 +84,16 @@ function App() {
           <Route path="/orders" element={<Orders />} />
           <Route path="/wholesale-orders" element={<WholesaleOrders />} />
           <Route path="/faqs" element={<FAQPage />} />
+          <Route path="/faq-page" element={<FAQPageNew />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/get-in-touch" element={<GetInTouchPage />} />
+          <Route path="/editorials" element={<EditorialsPage />} />
+          <Route path="/photography-blogs" element={<PhotographyBlogsPage />} />
+          <Route path="/films" element={<FilmsPage />} />
+          <Route path="/careers" element={<CareersPage />} />
+          <Route path="/testimonials" element={<TestimonialsPage />} />
           <Route path="/newly-launched" element={<NewlyLaunched />} />
         </Routes>
 
