@@ -6,6 +6,7 @@ import PhotographyBlogSection from "./PhotographyBlogSection";
 import AwardSection from "./AwardSection";
 import VideoSection from "./VideoSection";
 import PremiumCarousel from "./PremiumCarousel";
+import FAQsection from "./FAQsection";
 
 export default function DesktopHome() {
   return (
@@ -23,6 +24,7 @@ export default function DesktopHome() {
       <div className="mt-16 lg:mt-24">
         <PremiumCarousel />
       </div>
+      <FAQsection />
     </div>
   );
 }
