@@ -83,7 +83,7 @@ export default function PremiumCarousel() {
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={120}
-          slidesPerView={2.1}
+          slidesPerView={1}
           loop={true}
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
@@ -95,16 +95,16 @@ export default function PremiumCarousel() {
           }}
           breakpoints={{
             640: {
-              slidesPerView: 1.2,
+              slidesPerView: 1.05,
             },
             768: {
-              slidesPerView: 1.4,
+              slidesPerView: 1.15,
             },
             1024: {
-              slidesPerView: 1.7,
+              slidesPerView: 1.4,
             },
             1400: {
-              slidesPerView: 2.1,
+              slidesPerView: 1.7,
             },
           }}
         >
@@ -121,7 +121,7 @@ export default function PremiumCarousel() {
 
 function PremiumCard({ card }) {
   return (
-    <div className="group relative aspect-[16/9] min-h-[320px] rounded-[34px] overflow-hidden cursor-pointer lg:min-h-[360px] transition duration-500 hover:-translate-y-1">
+    <div className="group relative aspect-[16/9] min-h-[380px] rounded-[34px] overflow-hidden cursor-pointer lg:min-h-[420px] transition duration-500 hover:-translate-y-1">
 
       <img
         src={card.image}
