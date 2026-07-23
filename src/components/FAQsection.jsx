@@ -65,7 +65,7 @@ export default function FAQsection() {
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 transition"
+                  className="w-full flex items-center justify-between px-9 py-5 text-left hover:bg-gray-50 transition"
                 >
                   <h3 className="text-lg md:text-xl font-semibold text-gray-900">
                     {faq.question}
@@ -104,7 +104,6 @@ export default function FAQsection() {
           })}
         </div>
 
-        {/* Bottom CTA */}
         {/* Bottom CTA */}
 <div className="mt-16 text-center">
   <p className="text-lg md:text-xl text-gray-600">
