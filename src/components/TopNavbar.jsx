@@ -1,6 +1,7 @@
 import { ChevronDown } from "lucide-react";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function TopNavbar() {
   return (
@@ -13,13 +14,13 @@ export default function TopNavbar() {
 
         {/* Menu */}
         <nav className="hidden lg:flex items-center gap-10 text-white">
-          <a href="#">Photography</a>
+          <Link to="/photography-blogs">Photography</Link>
 
-          <a href="#">Films</a>
+          <Link to="/films">Films</Link>
 
-          <a href="#">About Us</a>
+          <Link to="/about-us">About Us</Link>
 
-          <a href="#">Editorial</a>
+          <Link to="/editorials">Editorial</Link>
 
           <button className="flex items-center gap-1">
             More
@@ -32,9 +33,12 @@ export default function TopNavbar() {
   <FaFacebookF className="cursor-pointer text-lg hover:opacity-80" />
   <FaXTwitter className="cursor-pointer text-lg hover:opacity-80" />
 
-  <button className="rounded-full border border-white px-6 py-3 transition hover:bg-white hover:text-black">
+  <Link
+    to="/get-in-touch"
+    className="rounded-full border border-white px-6 py-3 transition hover:bg-white hover:text-black"
+  >
     Get In Touch
-  </button>
+  </Link>
 </div>
       </div>
     </header>

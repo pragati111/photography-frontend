@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "../assets/blogs/1.png";
 import img2 from "../assets/blogs/2.png";
 import img3 from "../assets/blogs/3.png";
@@ -99,9 +100,12 @@ export default function PhotographyBlogSection() {
 
         <div className="flex justify-center mt-20">
 
-          <button className="bg-[#B89A55] hover:bg-[#A88C4C] text-white px-10 py-4 rounded-sm transition-all duration-300 tracking-wide">
+          <Link
+            to="/photography-blogs"
+            className="bg-[#B89A55] hover:bg-[#A88C4C] text-white px-10 py-4 rounded-sm transition-all duration-300 tracking-wide"
+          >
             Photography Blog
-          </button>
+          </Link>
 
         </div>
 

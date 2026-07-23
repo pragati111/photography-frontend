@@ -2,6 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -51,9 +52,12 @@ export default function PremiumCarousel() {
         <div className="flex items-center justify-between mb-12">
 
           <div>
-            <button className="inline-flex items-center justify-center rounded-xl border border-amber-600 bg-white/10 px-5 py-2 text-sm uppercase tracking-[4px] text-amber-600 transition hover:bg-white/20">
+            <Link
+              to="/films"
+              className="inline-flex items-center justify-center rounded-xl border border-amber-600 bg-white/10 px-5 py-2 text-sm uppercase tracking-[4px] text-amber-600 transition hover:bg-white/20"
+            >
               View All Films
-            </button>
+            </Link>
 
             <h2 className="mt-4 text-5xl font-serif">
               Featured Collections
