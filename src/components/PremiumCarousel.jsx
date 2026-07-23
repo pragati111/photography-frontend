@@ -51,11 +51,11 @@ export default function PremiumCarousel() {
         <div className="flex items-center justify-between mb-12">
 
           <div>
-            <p className="uppercase tracking-[8px] text-amber-600 text-sm mb-2">
-              Portfolio
-            </p>
+            <button className="inline-flex items-center justify-center rounded-xl border border-amber-600 bg-white/10 px-5 py-2 text-sm uppercase tracking-[4px] text-amber-600 transition hover:bg-white/20">
+              View All Films
+            </button>
 
-            <h2 className="text-5xl font-serif">
+            <h2 className="mt-4 text-5xl font-serif">
               Featured Collections
             </h2>
           </div>
@@ -82,13 +82,9 @@ export default function PremiumCarousel() {
 
         <Swiper
           modules={[Navigation, Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1.2}
+          spaceBetween={120}
+          slidesPerView={2.1}
           loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
@@ -99,16 +95,16 @@ export default function PremiumCarousel() {
           }}
           breakpoints={{
             640: {
-              slidesPerView: 1.5,
+              slidesPerView: 1.2,
             },
             768: {
-              slidesPerView: 2.2,
+              slidesPerView: 1.4,
             },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 1.7,
             },
             1400: {
-              slidesPerView: 3.6,
+              slidesPerView: 2.1,
             },
           }}
         >
@@ -125,12 +121,12 @@ export default function PremiumCarousel() {
 
 function PremiumCard({ card }) {
   return (
-    <div className="group relative h-[520px] rounded-[34px] overflow-hidden cursor-pointer">
+    <div className="group relative aspect-[16/9] min-h-[320px] rounded-[34px] overflow-hidden cursor-pointer lg:min-h-[360px] transition duration-500 hover:-translate-y-1">
 
       <img
         src={card.image}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110"
+        className="absolute inset-0 w-full h-full object-cover transition duration-700"
       />
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
@@ -157,15 +153,12 @@ function PremiumCard({ card }) {
           {card.subtitle}
         </p>
 
-        <button className="mt-8 px-6 py-3 rounded-full bg-white text-black font-medium transition-all duration-300 hover:bg-amber-500 hover:text-white">
-          Explore →
-        </button>
 
       </div>
 
       <div className="absolute inset-0 border border-white/10 rounded-[34px]" />
 
-      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-white/5 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-10 transition duration-500 bg-white/5 backdrop-blur-[2px]" />
 
     </div>
   );

@@ -39,7 +39,7 @@ export default function VideoSection() {
                 letterSpacing: "-2px",
               }}
             >
-              MOMENTS IN MOTION
+              MOMENTS  in  MOTION
             </h2>
 
             <p
