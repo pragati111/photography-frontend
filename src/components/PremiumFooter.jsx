@@ -11,7 +11,7 @@ const PremiumFooter = () => {
   { name: "Contact Us", path: "/contact" },
 ];
   return (
-    <footer className="bg-[#0f172a] text-slate-300 py-10 px-6 font-sans">
+    <footer className="bg-gradient-to-br from-[#0b1220] via-[#1e223b] to-[#3d2c5b] text-slate-200 py-10 px-6 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
         {/* Section 1: Contact Us */}
@@ -88,7 +88,7 @@ const PremiumFooter = () => {
           <div className="flex gap-3 text-sm">
             <MapPin size={20} className="text-blue-400 shrink-0" />
             <p className="leading-snug">
-              123 Creative Studio, <br />
+              123 Photography Studio, <br />
               Business District, Phase II, <br />
               Jaipur, RJ 302001
             </p>
@@ -99,7 +99,7 @@ const PremiumFooter = () => {
 
       {/* Tighter Bottom Copyright section */}
       <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-slate-800 text-center text-[12px] text-slate-300">
-        <p className="opacity-90">© {new Date().getFullYear()} Your Print Studio. All Rights Reserved. Unauthorized reproduction, distribution, or theft of website design and content is strictly prohibited and constitutes a punishable legal offense under the Copyright Act. </p>
+        <p className="opacity-90">© {new Date().getFullYear()} Your Photography Studio. All Rights Reserved. Unauthorized reproduction, distribution, or theft of website design and content is strictly prohibited and constitutes a punishable legal offense under the Copyright Act. </p>
       </div>
     </footer>
   );

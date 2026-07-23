@@ -38,49 +38,52 @@ export default function FAQsection() {
   };
 
   return (
-    <section className="bg-white py-20 px-6">
+    <section className=" py-24 px-6">
       <div className="max-w-4xl mx-auto">
 
         {/* Heading */}
         <div className="text-center mb-14">
-          <p className="uppercase tracking-[4px] text-gray-500 text-sm">
+          <p className="uppercase tracking-[6px] text-amber-700 text-sm font-semibold mb-3">
             Frequently Asked Questions
           </p>
 
+          <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#3a2720] leading-tight">
+            Answers made simple for your luxury wedding journey.
+          </h2>
 
-          <p className="text-gray-600 mt-5 max-w-2xl mx-auto">
-            Have questions? We've answered some of the most common ones below.
+          <p className="text-[#5d4a3f] mt-5 max-w-2xl mx-auto text-base md:text-lg leading-8">
+            Browse the most common questions and discover how we create elevated experiences with every celebration.
           </p>
         </div>
 
         {/* FAQ List */}
-        <div className="space-y-1">
+        <div className="space-y-6">
           {faqs.map((faq, index) => {
             const isOpen = activeIndex === index;
 
             return (
               <div
                 key={index}
-                className="border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300"
+                className="rounded-[2rem] border border-white/70 bg-white/95 shadow-[0_32px_70px_rgba(71,41,15,0.12)] overflow-hidden transition-all duration-300"
               >
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full flex items-center justify-between px-9 py-5 text-left hover:bg-gray-50 transition"
+                  className="w-full flex items-center justify-between px-9 py-6 text-left bg-white transition hover:bg-amber-50"
                 >
-                  <h3 className="text-lg md:text-xl font-semibold text-gray-900">
+                  <h3 className="text-lg md:text-xl font-semibold text-[#422a1e]">
                     {faq.question}
                   </h3>
 
-                  <div className="ml-4 flex-shrink-0">
+                  <div className="ml-4 flex-shrink-0 text-amber-600">
                     {isOpen ? (
                       <Minus
-                        size={22}
-                        className="text-gray-700 transition-transform duration-300"
+                        size={24}
+                        className="transition-transform duration-300"
                       />
                     ) : (
                       <Plus
-                        size={22}
-                        className="text-gray-700 transition-transform duration-300"
+                        size={24}
+                        className="transition-transform duration-300"
                       />
                     )}
                   </div>
@@ -94,7 +97,7 @@ export default function FAQsection() {
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="px-6 pb-5 text-gray-600 leading-7">
+                    <div className="px-9 pb-8 text-[#5d4a3f] leading-8 text-base md:text-lg bg-[#fff8f1] rounded-b-[2rem]">
                       {faq.answer}
                     </div>
                   </div>
@@ -105,22 +108,22 @@ export default function FAQsection() {
         </div>
 
         {/* Bottom CTA */}
-<div className="mt-16 text-center">
-  <p className="text-lg md:text-xl text-gray-600">
-    Have more questions?
-  </p>
+        <div className="mt-16 rounded-[2rem] bg-[#3a2720] p-10 text-center shadow-[0_30px_80px_rgba(0,0,0,0.18)]">
+          <p className="text-3xl md:text-4xl font-semibold text-[#f6e7d5] leading-tight">
+            Still curious? We’re here to answer everything.
+          </p>
 
-  <p className="mt-2 text-gray-500">
-    Head over to our FAQs page for everything you need to know.
-  </p>
+          <p className="mt-4 text-[#d8c2a6] text-lg max-w-2xl mx-auto">
+            Explore the full FAQ collection and discover how our luxury wedding services work.
+          </p>
 
-  <Link
-    to="/faq"
-    className="mt-8 inline-flex items-center rounded-full border border-gray-900 px-8 py-3 text-sm font-medium tracking-[2px] uppercase transition-all duration-300 hover:bg-gray-900 hover:text-white"
-  >
-    Know More
-  </Link>
-</div>
+          <Link
+            to="/faq"
+            className="mt-8 inline-flex items-center justify-center rounded-full bg-amber-200 px-10 py-4 text-sm font-semibold text-[#3a2720] transition hover:bg-amber-300"
+          >
+            Know More
+          </Link>
+        </div>
       </div>
      
     </section>
