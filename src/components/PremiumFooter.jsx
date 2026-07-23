@@ -11,8 +11,7 @@ const PremiumFooter = () => {
   { name: "Contact Us", path: "/contact" },
 ];
   return (
-    /* Reduced vertical padding from py-16 to py-10 and added mb-12 for bottom margin */
-    <footer className="bg-[#0f172a] text-slate-300 py-10 pb-24 px-6 font-sans ">
+    <footer className="bg-[#0f172a] text-slate-300 py-10 px-6 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         
         {/* Section 1: Contact Us */}

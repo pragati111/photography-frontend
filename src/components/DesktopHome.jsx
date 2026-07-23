@@ -7,6 +7,7 @@ import AwardSection from "./AwardSection";
 import VideoSection from "./VideoSection";
 import PremiumCarousel from "./PremiumCarousel";
 import FAQsection from "./FAQsection";
+import PremiumFooter from "./PremiumFooter";
 
 export default function DesktopHome() {
   return (
@@ -25,6 +26,7 @@ export default function DesktopHome() {
         <PremiumCarousel />
       </div>
       <FAQsection />
+      <PremiumFooter/>
     </div>
   );
 }
